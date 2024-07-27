@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100" style="background-color: rgb(9, 116, 80);"   >
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold text-center"  style="margin: 20px ; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder; font-size: 50px;">Add Product</h1>
+      <div class="bg-white shadow-md rounded-lg p-6" style="margin:   40px auto 0 auto; border: 1px solid black; padding: 30px; border-radius: 20px;  box-shadow: 1px 1px 10px 1px black; width: 50%; ">
+        <form id="event_form"  >
+          <!-- Event Image Upload -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventImage"
+              >Product Image</label
+            >
+            <input
+              type="file"
+              id="eventImage"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Event Title -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              > Category </label
+            >
+            <input
+              type="text"
+              id="Category"
+              placeholder="Enter Your Product Category"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+          
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              > Product Name</label
+            >
+            <input
+              type="text"
+              id="product_Name"
+              placeholder="Enter Your Product Name"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+          
+
+          <!-- Event Location -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventLocation"
+              >Price</label
+            >
+            <input
+              type="number"
+              id="price"
+              placeholder="Enter Your Product Price"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          
+          <!-- Submit Button -->
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+              style="background-color: rgb(9, 116, 80);; width: 100%; font-weight: bolder;  color: black;"
+            >
+              ADD
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
